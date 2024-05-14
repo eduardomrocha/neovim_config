@@ -16,10 +16,10 @@ return {
         "gopls",
         "html",
         "jsonls",
-        "pyright",
+        -- "pyright",
         "stylelint_lsp",
         "lua_ls",
-        "tsserver",
+        -- "tsserver",
         "yamlls",
         -- add more arguments for adding more language servers
       })
@@ -37,14 +37,14 @@ return {
         "fixjson",
         "stylua",
         "markdownlint",
-        "black",
+        -- "black",
         "prettierd",
-        "stylelint",
+        -- "stylelint",
         "hadolint",
         "revive",
         "jsonlint",
         "luacheck",
-        "pylama",
+        -- "pylama",
         "yamllint",
         -- add more arguments for adding more null-ls sources
       })
@@ -56,8 +56,9 @@ return {
     opts = function(_, opts)
       -- add more things to the ensure_installed table protecting against community packs modifying it
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
-        "python",
-        "js",
+        -- "python",
+        -- "js",
+        "delve",
         -- add more arguments for adding more debuggers
       })
     end,
