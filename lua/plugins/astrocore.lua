@@ -57,8 +57,8 @@ return {
       n = {
         -- second key is the lefthand side of the map
         -- mappings seen under group name "Buffer"
-        ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
-        ["<leader>bD"] = {
+        ["<Leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
+        ["<Leader>bD"] = {
           function()
             require("astroui.status.heirline").buffer_picker(
               function(bufnr) require("astrocore.buffer").close(bufnr) end
@@ -68,11 +68,11 @@ return {
         },
         -- tables with the `name` key will be registered with which-key if it's installed
         -- this is useful for naming menus
-        ["<leader>b"] = { name = "Buffers" },
+        ["<Leader>b"] = { name = "Buffers" },
         ["<TAB>"] = { ":bnext<CR>", desc = "Next buffer" },
         ["<S-TAB>"] = { ":bprevious<CR>", desc = "Previous buffer" },
         [";"] = { ":", desc = "Ex command line" },
-        ["<leader>h"] = { ":HopChar2<CR>", desc = "Hop to 2Char" },
+        ["<Leader>h"] = { ":HopChar2<CR>", desc = "Hop to 2Char" },
         ["<Leader>c"] = {
           function()
             local bufs = vim.fn.getbufinfo { buflisted = true }
