@@ -19,7 +19,7 @@ return {
         "pyright",
         "stylelint_lsp",
         "lua_ls",
-        "tsserver",
+        "ts_ls",
         "yamlls",
         -- add more arguments for adding more language servers
       })
