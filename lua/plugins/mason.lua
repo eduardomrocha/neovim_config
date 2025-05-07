@@ -1,5 +1,3 @@
--- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- Customize Mason plugins
 
 ---@type LazySpec
@@ -11,16 +9,16 @@ return {
     opts = function(_, opts)
       -- add more things to the ensure_installed table protecting against community packs modifying it
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
-        "bashls",
-        "dockerls",
-        "gopls",
-        "html",
-        "jsonls",
-        "pyright",
-        "stylelint_lsp",
-        "lua_ls",
-        "ts_ls",
-        "yamlls",
+        -- "bashls",
+        -- "dockerls",
+        -- "gopls",
+        -- "html",
+        -- "jsonls",
+        -- "pyright",
+        -- "stylelint_lsp", -- css
+        -- "lua_ls",
+        -- "ts_ls",
+        -- "yamlls",
         -- add more arguments for adding more language servers
       })
     end,
@@ -32,20 +30,20 @@ return {
     opts = function(_, opts)
       -- add more things to the ensure_installed table protecting against community packs modifying it
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
-        "eslint_d",
-        "stylelint",
-        "golines",
-        "revive",
-        "tidy",
-        "stylua",
-        "selene",
-        "markdownlint",
+        -- "eslint_d",
+        -- "stylelint", -- css linter
+        -- "golines",
+        -- "revive", -- go linter
+        -- "tidy",
+        -- "stylua",
+        -- "selene",
+        -- "markdownlint",
         "isort",
         "mypy",
-        "ruff",
-        "prettierd",
-        "yamllint",
-        "hadolint",
+        -- "ruff",
+        -- "prettierd",
+        -- "yamllint",
+        -- "hadolint",
         -- add more arguments for adding more null-ls sources
       })
     end,
@@ -56,9 +54,9 @@ return {
     opts = function(_, opts)
       -- add more things to the ensure_installed table protecting against community packs modifying it
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
-        "python",
-        "js",
-        "delve",
+        -- "python",
+        -- "js",
+        -- "delve", -- go debugger
         -- add more arguments for adding more debuggers
       })
     end,

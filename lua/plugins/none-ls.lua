@@ -1,5 +1,3 @@
--- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- Customize None-ls sources
 
 ---@type LazySpec
@@ -17,29 +15,29 @@ return {
     -- https://github.com/nvimtools/none-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
     config.sources = {
       -- javascript, typescript
-      require "none-ls.code_actions.eslint_d",
-      require "none-ls.formatting.eslint_d",
-      require "none-ls.diagnostics.eslint_d",
+      -- require "none-ls.code_actions.eslint_d",
+      -- require "none-ls.formatting.eslint_d",
+      -- require "none-ls.diagnostics.eslint_d",
 
       -- css, scss, less, sass
-      null_ls.builtins.formatting.stylelint,
-      null_ls.builtins.diagnostics.stylelint,
+      -- null_ls.builtins.formatting.stylelint,
+      -- null_ls.builtins.diagnostics.stylelint,
 
       -- golang
-      null_ls.builtins.formatting.golines,
-      null_ls.builtins.diagnostics.revive,
+      -- null_ls.builtins.formatting.golines,
+      -- null_ls.builtins.diagnostics.revive,
 
       -- html
-      null_ls.builtins.formatting.tidy,
-      null_ls.builtins.diagnostics.tidy,
+      -- null_ls.builtins.formatting.tidy,
+      -- null_ls.builtins.diagnostics.tidy,
 
       -- lua
-      null_ls.builtins.formatting.stylua,
-      null_ls.builtins.diagnostics.selene,
+      -- null_ls.builtins.formatting.stylua,
+      -- null_ls.builtins.diagnostics.selene,
 
       -- markdown
-      null_ls.builtins.formatting.markdownlint,
-      null_ls.builtins.diagnostics.markdownlint,
+      -- null_ls.builtins.formatting.markdownlint,
+      -- null_ls.builtins.diagnostics.markdownlint,
 
       -- python
       null_ls.builtins.formatting.isort.with { extra_args = { "--line-width", "120" } },
@@ -54,17 +52,17 @@ return {
       },
 
       -- yaml, graphql, json
-      null_ls.builtins.formatting.prettierd.with {
-        filetypes = {
-          "yaml",
-          "graphql",
-          "json",
-        },
-      },
-      null_ls.builtins.diagnostics.yamllint,
+      -- null_ls.builtins.formatting.prettierd.with {
+      --   filetypes = {
+      --     "yaml",
+      --     "graphql",
+      --     "json",
+      --   },
+      -- },
+      -- null_ls.builtins.diagnostics.yamllint,
 
       -- dockerfile
-      null_ls.builtins.diagnostics.hadolint,
+      -- null_ls.builtins.diagnostics.hadolint,
     }
     return config -- return final config table
   end,
